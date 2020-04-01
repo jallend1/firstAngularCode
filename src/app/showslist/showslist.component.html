@@ -1,0 +1,5 @@
+<app-showslist-item 
+    *ngFor="let show of shows$ | async" 
+    [show]="show"
+    (favorite)="onFavorite(item.id, $event)">
+</app-showslist-item>
